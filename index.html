@@ -11,7 +11,59 @@
 				  });
 				});
 		</script>
+		<style>
+			/*메인페이지 상단 서치&탭*/
+			#topfollow{position:fixed;top:0;width:100vw;background-color:white;}
+			/*상단 서치*/
+			#searchbox{position:relative; padding-left:1rem; padding-right:1rem;padding-top:3rem;background-color:white;}
+			#search{height:5rem;background-color:rgba(0,0,0,0.05); margin: 0; padding-top:0; margin-top:0;border-radius:2rem;}
+			#searchicon{position:absolute; top:2.5rem; width:3.4rem; margin-top:1.4rem; margin-left:1.6rem;}
+			#realsearchicon{width:100%;}
+			#reckeywords{color:rgba(0,0,0,0.3);position:absolute;top:4.2rem; margin-left:5.8rem;font-weight:bold;font-size:2rem;}
 
+			/*상단 탭*/
+			#toptab{width:100vw;height:7rem;background-color:white;display:flex;}
+			.toptabeach{width:33.333%;color:lightgray;text-align:center;margin-top:2.7rem; border-bottom: .6rem solid rgba(0,0,0,0.3);font-size:2rem;}
+			#recommend{color:black; border-bottom: .6rem solid black;font-weight:bold;}
+			#follow{color:gray;}
+			#hunt{color:gray;}
+
+
+			/*메인페이지 상단 gif*/
+			#topbox{position:relative;margin-top:15rem;font-family:"Noto Sans",san-serif;}
+				#gif1{width:100vw;margin-top:0;margin-left:0; padding:0;}
+				#hollywood{position:absolute; bottom: 1.9rem; left:2rem; color:white;font-size: 2.8rem;font-weight:bold;background-color:rgba(0,0,0,0.7);}
+
+
+			/*지금 핫한 패션 GIF*/
+			#trendbox{margin-left:1rem;}
+				.rankingtxt{display:flex;position:relative;}
+				.trendtxt{color:black; margin-top:3rem;margin-bottom:.5rem; font-weight:bold;font-size:2.5rem;}
+				#seeall{right:1rem;position:absolute; color:blue;font-weight:normal; font-size:2rem;padding-top:.4rem;}
+				#seeall2{right:1rem;position:absolute; color:blue;font-weight:normal; font-size:2rem;}
+
+			#trendimgbox{width:99%; height:24vh;position:relative; display:flex;overflow:hidden;}
+				.gif2{height:100%;}
+				.trendimg{padding-right:.8rem;}
+
+
+			/*트렌드 태그에서 여기만있는애들*/
+			#todaytxt{color:black; margin-top:30px;margin-bottom:1.3rem;font-weight:bold;font-size:2.5rem;}
+
+			#blank{width:100%; background-color:rgb(156, 52, 255); font-weight:bold;text-align:center;padding-top:5rem; padding-bottom:5rem;margin-bottom:1rem;color:white;font-size:2.5rem;}
+			#sunglass{width:100%; background-color:rgb(255, 53, 113);color:white;font-weight:bold;text-align:center; padding-top:7rem;padding-bottom:7rem; margin-bottom:1rem;font-size:2.5rem;}
+			#denim{width:100%;background-color:rgb(40,127,255);color:white;font-weight:bold;text-align:center; padding-top:6rem; padding-bottom:6rem; margin-bottom:1rem;font-size:2.5rem;}
+
+			#etc{width:98%; text-align:center;padding-top:4rem;padding-bottom:4rem;background-color:white;border:.25rem solid lightgray;margin-top:1rem;color:gray;font-size:2.2rem;font-weight:bold;}
+
+
+			/*하단 더미*/
+			#bottomdummy{width: 100vw; height:15rem;}
+
+
+
+
+		</style>
 	</HEAD>
 
 
@@ -45,13 +97,13 @@
 		</div>
 
 
-		<div id="todaysfashionbox">
+		<div class="todaysfashionbox">
 			<div class="rankingtxt">
 			<div id="todaytxt">HOT 트렌드태그</div>
 			<div class= "trendtxt" id="seeall2">모두 보기</div>
 			</div>
 
-			<div id="todaysimgbox">
+			<div class="todaysimgbox">
 				<div class="row" id="firstrow">
 					<div class="giftxtbox">
 						<div class="giftxt1" id="streetfashion">#스트릿패션<br/>걸크러시 특집</div>
@@ -84,7 +136,7 @@
 
 					<div id="blank">#어머이건사야해😱</div>
 
-					<a id="alei" class="giftxtbox" href="https://pminjae.github.io/athleisure.html">
+					<a id="alei" class="giftxtbox" href="athleisure.html">
 						<div class="giftxt1" id="leisure">세상 제일 편한<br/> #애슬레저</div>
 						<img class="gif5" src="https://pds.joins.com/news/component/htmlphoto_mmdata/201703/09/e52fdfa5-592a-4239-8705-5c66489ef01b.jpg"/>
 					</a>

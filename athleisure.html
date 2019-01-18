@@ -1,8 +1,8 @@
 <HTML>
-	<head>
+	<HEAD>
 		<title>athleisure</title>
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="pminjae.github.io/totalcss.css">
+		<link rel="stylesheet" type="text/css" href="totalcss.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>
 				$(document).ready(function(){
@@ -10,29 +10,49 @@
 				    $("#uploadpopup").toggle();
 				  });
 				});
-				</script>
+		</script>
 				
 		<style>
-		body{ background:black; }
+			body{ background:black; }
+
+			#top{display:flex;position:relative;}
+			#back{width:2.5rem;height:2.5rem;margin-left:1.5rem;margin-top:2rem;}
+			#title{color:white; margin-left:1.5rem;margin-top:1.5rem;font-size:2.7rem;font-weight:bold;line-height:1.4; margin-bottom:2rem;}
+
+			/*상단 추가하기버튼*/
+			#topbutton{position:absolute; right:1rem;margin-top:1.5rem;font-size:2rem;width:12rem;}
+
+			/*게시물 클릭 시 게시물 하단 프로필*/
+			.profilebox{width:100%;display:flex;margin-left:.4rem;}
+			.profile{width:2.3rem;height:2.3rem;margin-top:.5rem;padding-right:.8rem;}
+			.text{color:white;margin-bottom:1.9rem;font-size:2rem;width:100%;margin-top:5px;}
+
+
+			/*HOT 트렌드태그*/
+
+			/*하단 더미*/
+			#bottombox{width:100vw; height:15rem;}
+
 		</style>
 
-	</head>
-	<body>
+	</HEAD>
+
+	<BODY>
 		
 		<div id="top">
-		<a id= "goback" href="https://pminjae.github.io">
-		<img id="back" src="http://pngify.me/gd/makefg.php?i=icons/Mobile%20Application/left-arrow.png&r=255&g=255&b=255">
-		</a>
-		<div id="title">세상 제일 편한 #애슬레저</div>
-		<button class="thebutton" id="topbutton">추가하기</button>
+			<a id= "goback" href="index.html">
+			<img id="back" src="http://pngify.me/gd/makefg.php?i=icons/Mobile%20Application/left-arrow.png&r=255&g=255&b=255">
+			</a>
+			<div id="title">세상 제일 편한 #애슬레저</div>
+			<button class="thebutton" id="topbutton">추가하기</button>
 		</div>
 
 
-		<div id="todaysfashionbox">
-			<div id="todaysimgbox">
+		<div class="todaysfashionbox">
+			<div class="todaysimgbox">
 				<div class="row" id="firstrow">
 					<div class="giftxtbox">
-						<img id="gif5" src="http://t1.daumcdn.net/liveboard/newsade/5bf77888c5b04cc6943f87b63345027d.JPG"/>
+						<img class="gif5" src="http://t1.daumcdn.net/liveboard/newsade/5bf77888c5b04cc6943f87b63345027d.JPG"/>
 					</div>
 
 					<div class="profilebox">
@@ -50,7 +70,6 @@
 					</div>
 					
 					<div class="giftxtbox">
-
 						<img class="gif5" src="https://media3.giphy.com/media/sU1rjy5Hjaw36/giphy.gif?cid=3640f6095c3f58ae6b58783573ec9fff"/>
 					</div>
 
@@ -126,16 +145,16 @@
 		</div>
 
 		<div id="tabbar">
-			<div class="tabbutton" id="home"><a href="https://pminjae.github.io">home</a></div>
+			<div class="tabbutton" id="home"><a href="index.html">home</a></div>
 			<div class="tabbutton" id="all">all</div>
 			<button class="thebutton">+</button>
 			<div class="tabbutton" id="alarm">alarm</div>
 			<div class="tabbutton" id="profile">profile</div>
-			</div>
+		</div>
 
 
 
-	</body>
+	</BODY>
 
 </HTML>
 
