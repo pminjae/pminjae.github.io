@@ -1,5 +1,5 @@
 body{ background-color:rgba(0,0,0,0.01); font-family: "Noto Sans", san-serif;margin:0;}
-a{text-decoration:none; color:white;}
+a{text-decoration:none; color:white;font-family:"Noto Sans", san-serif;}
 
 
 	#top{display:flex;position:relative;}
@@ -25,7 +25,7 @@ a{text-decoration:none; color:white;}
 
 
 /*메인페이지 상단 gif*/
-#topbox{position:relative;margin-top:15rem;}
+#topbox{position:relative;margin-top:15rem;font-family:"Noto Sans",san-serif;}
 	#gif1{width:100vw;margin-top:0;margin-left:0; padding:0;}
 	#hollywood{position:absolute; bottom: 1.9rem; left:2rem; color:white;font-size: 2.8rem;font-weight:bold;background-color:rgba(0,0,0,0.7);}
 
@@ -37,7 +37,7 @@ a{text-decoration:none; color:white;}
 		#seeall{right:1rem;position:absolute; color:blue;font-weight:normal; font-size:2rem;padding-top:.4rem;}
 		#seeall2{right:1rem;position:absolute; color:blue;font-weight:normal; font-size:2rem;}
 
-	#trendimgbox{width:100vw; height:24vh;position:relative; display:flex;overflow:hidden;}
+	#trendimgbox{width:99%; height:24vh;position:relative; display:flex;overflow:hidden;}
 		.gif2{height:100%;}
 		.trendimg{padding-right:.8rem;}
 
