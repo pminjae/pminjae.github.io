@@ -1,0 +1,208 @@
+<HTML>
+	<head>
+
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+				$(document).ready(function(){
+				  $("button").click(function(){
+				    $("#uploadpopup").toggle();
+				  });
+				});
+				</script>
+
+		<style>
+			
+		body{margin:0;font-family: "Noto Sans", san-serif;}
+
+		a{text-decoration:none; color:white;}
+
+		#topfollow{position:fixed;top:0;width:100vw;background-color:white;}
+				#searchbox{position:relative; padding-left:10px;padding-top:20px;padding-right:10px;background-color:white;}
+				#search{width:95vw; height:40px;background-color:rgba(0,0,0,0.05); margin: 0px; padding-top:0px; margin-top:0px;border-radius:20px;}
+				#searchicon{position:absolute; top:20px; width:24px; margin-top:9px; margin-left:16px;}
+				#realsearchicon{width:100%;}
+				#reckeywords{color:rgba(0,0,0,0.3);position:absolute;top:30px; margin-left:48px;font-weight:bold;}
+
+				#toptab{width:100vw;height:40px;background-color:white;display:flex;}
+				.toptabeach{width:50%;color:lightgray;text-align:center;margin-top:13px; border-bottom: 2px solid rgba(0,0,0,0.3);font-size:14px;}
+				#recommend{color:gray; }
+				#followtab{color:black; border-bottom: 3px solid black;font-weight:bold;}	
+				#follow{color:black;}
+				#rectext{color:gray;}
+
+
+
+		
+		#tabbar{position:fixed;bottom:0; background-color:black;width:100vw;height:70px; display:flex; }
+				.tabbutton{margin-right:10px;margin-left:10px; height:100%; width:20%; background-color:black; text-align:center;padding-top:9px; color:gray; font-weight:bold;font-size:15px; border-top:4px solid black;}
+				#home{border-top:4px solid white; color:white;}
+
+
+		#uploadpopup{position:fixed;width:100vw;bottom:70px;display:none;}
+			#topblur{height:80vh;width:100%;background-color:rgba(0,0,0,0.4);}
+			#library{width:100%;height:45px;background-color:white;text-align:center;padding-top:23px;font-weight:bold;border-bottom:1px solid lightgrey;}
+			#url{width:100%;height:45px;background-color:white;text-align:center;padding-top:23px;font-weight:bold;}
+			#thebutton{width:50px;height:25px;background-color:white; border-radius:30px;font-size:15px;font-weight:bold;margin-top:10px;}
+
+
+		#contents{width:100%;margin-top:110px;}
+		.posting{width:100%; margin-bottom:20px; }
+		.profileinfo{width:100%; height:30px; display:flex;}
+		.userid{font-weight:bold;padding-top:10px;font-size:14px;}
+		.profilepic{width:40px;height:40px;}
+		.photoimg{width:100%;margin-top:15px;}
+
+		.textset{margin-left:10px;margin-top:5px;}
+			
+			.iconset{display:flex;position:relative;}
+				.icon{width:23px;height:23px;margin-right:10px;margin-top:10px;}
+				#saveicon{position:absolute;right:10px;}
+
+			.numberoflikes{font-size:13px;margin-top:9px;font-weight:bold;}
+			.postingtext{margin-top:5px;font-size:14px;}
+			.reply{color:gray;font-size:13px;margin-top:8px;}
+
+		.borderline{width:100%;height:10px;background-color:rgba(0,0,0,0.07);margin-top:24px;}
+
+
+		#bottomdummy{width:100%;height:100px;}
+
+		</style>
+
+	</head>
+	<body>
+
+		<div id="contents">
+			<div class="posting">
+				<div class="profileinfo">
+					<img class="profilepic" src="https://static1.squarespace.com/static/56687b63bfe8731ec36f0d11/t/59fd07fe64265f6a40fdf888/1509754893597/circle-headshot.png"/>
+					<div class="userid">pminjae</div>
+				</div>
+				<img class="photoimg" src="http://t1.daumcdn.net/liveboard/newsade/5bf77888c5b04cc6943f87b63345027d.JPG"/>
+				<div class="textset">
+					<div class="iconset">
+					<img class="icon" id="likeicon" src="https://image.flaticon.com/icons/svg/1077/1077035.svg" />
+					<img class="icon"  id="replyicon" src="https://image.flaticon.com/icons/svg/54/54761.svg" />
+					<img class="icon" id="shareicon" src="https://image.flaticon.com/icons/svg/126/126495.svg" />
+					<img class="icon" id="saveicon" src="https://image.flaticon.com/icons/svg/25/25667.svg" />
+					</div>
+
+					<div class="numberoflikes">좋아요 123개</div>
+					<div class="postingtext"><b>pminjae</b> 운동하고 와서 너무 덥다</div>
+					<div class="reply">댓글 27개 모두 보기</div>
+				</div>
+
+				<div class="borderline"></div>
+			</div>
+
+			<div class="posting">
+				<div class="profileinfo">
+					<img class="profilepic" src="https://static1.squarespace.com/static/56687b63bfe8731ec36f0d11/t/59fd07fe64265f6a40fdf888/1509754893597/circle-headshot.png"/>
+					<div class="userid">pminjae</div>
+				</div>
+				<img class="photoimg" src="http://file3.instiz.net/data/file3/2018/03/16/1/7/f/17ff30cf89957a0e5848181c7d3ed3f9.gif"/>
+				<div class="textset">
+					<div class="iconset">
+					<img class="icon" id="likeicon" src="https://image.flaticon.com/icons/svg/1077/1077035.svg" />
+					<img class="icon"  id="replyicon" src="https://image.flaticon.com/icons/svg/54/54761.svg" />
+					<img class="icon" id="shareicon" src="https://image.flaticon.com/icons/svg/126/126495.svg" />
+					<img class="icon" id="saveicon" src="https://image.flaticon.com/icons/svg/25/25667.svg" />
+					</div>
+
+					<div class="numberoflikes">좋아요 123개</div>
+					<div class="postingtext"><b>pminjae</b> 운동하고 와서 너무 덥다</div>
+					<div class="reply">댓글 27개 모두 보기</div>
+				</div>
+
+				<div class="borderline"></div>
+			</div>
+
+			<div class="posting">
+				<div class="profileinfo">
+					<img class="profilepic" src="https://static1.squarespace.com/static/56687b63bfe8731ec36f0d11/t/59fd07fe64265f6a40fdf888/1509754893597/circle-headshot.png"/>
+					<div class="userid">pminjae</div>
+				</div>
+				<img class="photoimg" src="http://mblogthumb3.phinf.naver.net/MjAxNzA5MjJfNzAg/MDAxNTA2MDA3MDMxOTQy.R9C8DVvYIUCiv9CTbJkqHObD9TWMw4pCCd67FQtjFfog.jqFyjSmZn8JiAPJbmiGDS3mYJZc-BnRCVxj4BaJzjiUg.JPEG.stitch5043/%EC%97%B0%EC%98%88%EC%9D%B8_%EC%82%AC%EB%B3%B5%ED%8C%A8%EC%85%98_%EC%84%A0%EB%AF%B8_%EC%8A%A4%ED%83%80%EC%9D%BC_%2823%29.jpg?type=w800"/>
+				<div class="textset">
+					<div class="iconset">
+					<img class="icon" id="likeicon" src="https://image.flaticon.com/icons/svg/1077/1077035.svg" />
+					<img class="icon"  id="replyicon" src="https://image.flaticon.com/icons/svg/54/54761.svg" />
+					<img class="icon" id="shareicon" src="https://image.flaticon.com/icons/svg/126/126495.svg" />
+					<img class="icon" id="saveicon" src="https://image.flaticon.com/icons/svg/25/25667.svg" />
+					</div>
+
+					<div class="numberoflikes">좋아요 123개</div>
+					<div class="postingtext"><b>pminjae</b> 운동하고 와서 너무 덥다</div>
+					<div class="reply">댓글 27개 모두 보기</div>
+				</div>
+
+				<div class="borderline"></div>
+			</div>
+
+			<div class="posting">
+				<div class="profileinfo">
+					<img class="profilepic" src="https://static1.squarespace.com/static/56687b63bfe8731ec36f0d11/t/59fd07fe64265f6a40fdf888/1509754893597/circle-headshot.png"/>
+					<div class="userid">pminjae</div>
+				</div>
+				<img class="photoimg" src="http://file3.instiz.net/data/file3/2018/02/01/2/b/6/2b65ac837f75241dfe5cf5366f6ed089.gif"/>
+				<div class="textset">
+					<div class="iconset">
+					<img class="icon" id="likeicon" src="https://image.flaticon.com/icons/svg/1077/1077035.svg" />
+					<img class="icon"  id="replyicon" src="https://image.flaticon.com/icons/svg/54/54761.svg" />
+					<img class="icon" id="shareicon" src="https://image.flaticon.com/icons/svg/126/126495.svg" />
+					<img class="icon" id="saveicon" src="https://image.flaticon.com/icons/svg/25/25667.svg" />
+					</div>
+
+					<div class="numberoflikes">좋아요 123개</div>
+					<div class="postingtext"><b>pminjae</b> 운동하고 와서 너무 덥다</div>
+					<div class="reply">댓글 27개 모두 보기</div>
+				</div>
+
+				<div class="borderline"></div>
+			</div>
+			
+		</div>
+
+		<div id="bottomdummy"></div>
+
+		
+		
+
+		<div id="topfollow">
+			<div id="searchbox">
+				<div id="search";></div>
+				<div id="searchicon"> 
+					<img id="realsearchicon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-128.png"/> 
+				</div>
+				<div id="reckeywords">숏패딩,롱패딩</div>
+			</div>
+
+			<div id="toptab">
+				
+				<div class="toptabeach" id="followtab" ><a id="follow" href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/web%20test/follow.html">팔로우</a></div>
+				<div class="toptabeach" id="recommend"><a id="rectext" href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/giftest.html">추천</a></div>
+				<div class="toptabeach" id="hunt">헌트</div>
+			</div>
+		</div>
+
+		<div id="uploadpopup">
+			<div id="topblur"></div>
+			<div id="library">사진/영상 업로드</div>
+			<div id="url">웹사이트</div>
+		</div>
+
+
+
+		<div id="tabbar">
+			<div class="tabbutton" id="home"><a href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/giftest.html">home</a></div>
+			<div class="tabbutton" id="all">all</div>
+			<button id="thebutton">+</button>
+			<div class="tabbutton" id="alarm">alarm</div>
+			<div class="tabbutton" id="profile">profile</div>
+			</div>
+
+
+	</body>
+
+</HTML>

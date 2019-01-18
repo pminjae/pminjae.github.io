@@ -1,0 +1,173 @@
+<HTML>
+	<HEAD>
+		<title>helloworld</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+		<style>
+			body{ background-color:black; 
+				font-family: "Noto Sans", san-serif;
+				margin:0;}
+			#title{display:flex;margin:5px;padding:0;}
+			#day{color:white;}
+			#celcius{color:white; position:absolute; right:20;}
+
+			#searchbox{position:relative; margin-left:10px;}
+			#search{width:95vw; height:40px;background-color:white; margin: 0px; padding-top:0px; margin-top:0px;}
+			#searchicon{position:absolute;top:0; width:24px; margin-top:9px; margin-left:10px;}
+			#realsearchicon{width:100%;}
+			#reckeywords{color:lightgrey;position:absolute;top:25%; margin-left:45px;}
+
+			#gif1{width:100vw;margin-top:0px;margin-left:0; padding:0;}
+			#topbox{position:relative;}
+			#hollywood{position:absolute; bottom: 19px; left:16px; color:white;font-size: 20px;font-weight:bold;}
+
+			#trendbox{margin-left:10px;}
+			#trendtxt{color:lightgrey; margin-top:25px;margin-bottom:10px;}
+			#trendimgbox{width:100vw; height:20vh;position:relative; display:flex;}
+			#gif2{height:100%;}
+			#gif3{height:100%;}
+			#gif4{height:100%;}
+			.trendimg{padding-right:8px;}
+
+			#tabbar{position:fixed;bottom:0; background-color:black;width:100vw;height:40px; display:flex; border-top:1px solid rgba(255,255,255,0.1);}
+			.tabbutton{margin-right:20px;margin-left:20px; height:100%; width:30%; background-color:black; text-align:center;padding-top:9px; color:white; font-weight:bold;font-size:15px;
+				border-top:4px solid black;}
+
+			a{text-decoration:none; color:white;}
+
+			#upload{font-size:25px;padding-top:4px;border-top:4px solid lightgreen; color:lightgreen;}
+
+			#todaysfashionbox{margin-left:10px;width:98vw;margin-right:10px;}
+			#todaytxt{color:white; margin-top:30px;margin-bottom:10px;}
+
+			#todaysimgbox{width:100%;  display:flex;}
+
+
+			.row{width:100%;margin-right:10px;}
+
+			.giftxtbox{position:relative;margin-right:10px;width:100%;overflow:hidden;margin-bottom:10px;}
+			.giftxt1{position:absolute; color:white;width:140px; left:10px; bottom:10;background-color:rgba(0, 0, 0, 0.5); font-weight:bold; }
+			#cold{width:80px;}
+			#leisure{width:100px;}
+			#monokini{width:100px;}
+
+			#gif5{width:100%; }
+			#gif6{width:100%;}
+
+			#blank{width:100%; height:81px; background-color:rgb(156, 52, 255); font-weight:bold;text-align:center;padding-top:58px;color:white;}
+			#sunglass{width:100%; height:40px;background-color:rgb(255, 53, 113);color:white;font-weight:bold;text-align:center; height:81px; padding-top:35px; margin-bottom:10px;}
+
+
+
+			#uploadpopup{position:fixed;width:100vw;bottom:40px;}
+			#library{width:100%;height:45px;background-color:white;text-align:center;padding-top:23px;font-weight:bold;border-bottom:1px solid lightgrey;}
+			#url{width:100%;height:45px;background-color:white;text-align:center;padding-top:23px;font-weight:bold;}
+
+
+			#bottomdummy{width: 100vw; height:60px;}
+
+		</style>
+
+	</HEAD>
+
+
+	<BODY>
+		<div id="whole">
+
+		
+		<div id="title">
+		<div id="day">수요일 </div>
+		<div id="celcius">0℃</div></div>
+		
+		<div id="searchbox">
+			<div id="search";></div>
+			<div id="searchicon"> 
+				<img id="realsearchicon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-128.png"/> 
+			</div>
+			<div id="reckeywords">숏패딩,롱패딩</div>
+		</div>
+
+		<div id="topbox">
+		<div id="hollywood">할리우드 스타들의<br/>패션 파파라치컷</div>>
+		<img id="gif1" src="https://media1.giphy.com/media/l41YcmwyUcFOweblK/giphy.gif?cid=3640f6095c3eef2b512e4757673d1c74"/>
+		</div>
+
+
+		<div id="trendbox">
+			<div id="trendtxt">트렌드 패션</div>
+			<div id="trendimgbox">
+				<div class="trendimg">
+					<img id="gif2" src="https://media.giphy.com/media/ODN2GwubhuURa/giphy.gif"/>
+				</div>
+				<div class="trendimg">
+					<img id="gif3" src="https://media.giphy.com/media/lsUokQ5GRBMxq/giphy.gif"/>
+				</div>
+				<div class="trendimg">
+					<img id="gif4" src="https://media.giphy.com/media/xnMyN8CzPRyZa/giphy.gif"/>
+					
+				</div>
+			</div>
+			
+		</div>
+
+		<div id="todaysfashionbox">
+			<div id="todaytxt">오늘의 패션</div>
+			<div id="todaysimgbox">
+				<div class="row" id="firstrow">
+					<div class="giftxtbox">
+						<div class="giftxt1">빅토리아시크릿 모델들의 사복패션</div>
+						<img id="gif5" src="https://media.giphy.com/media/BmEa5BVNQD7lC/giphy.gif"/>
+					</div>
+
+					<div id="sunglass">선글라스 하나로<br/>멋짐 폭발 😎</div>
+					
+					<div class="giftxtbox">
+						<div class="giftxt1" id="monokini">요즘 핫하다던<br/>모노키니</div>
+						<img id="gif5" src="https://media1.giphy.com/media/nmElnjuprfVoQ/giphy.gif?cid=3640f6095c3f4a376c2f515145867bd0"/>
+					</div>
+
+				</div>
+
+				<div class="row" id="secondrow">
+					<div class="giftxtbox">
+						<div class="giftxt1" id="cold">얼어죽어도<br/>크롭탑</div>
+						<img id="gif6" src="https://media2.giphy.com/media/3mjT7mlmU5S01fPs5D/giphy.gif?cid=3640f6095c3f45273861424d67f91df9"/>
+					</div>
+					
+					<div class="giftxtbox">
+						<div class="giftxt1" id="leisure">세상 제일 편한<br/> #애슬레저</div>
+						<img id="gif5" src="https://media1.giphy.com/media/K9r9u8OyDEtcQ/giphy.gif?cid=3640f6095c3f49c17a374d7a4defa394"/>
+					</div>
+
+					<div id="blank">어머 이건 사야해😱</div>
+				</div>
+
+
+			</div>
+			
+		</div>
+
+
+		<div id="bottomdummy"></div>
+
+		<div id="uploadpopup">
+			<div id="library">사진/영상 업로드</div>
+			<div id="url">웹사이트</div>
+		</div>
+
+
+		<div id="tabbar">
+			<div class="tabbutton" id="home"><a href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/giftest.html">home</a></div>
+			<div class="tabbutton" id="upload">
+			<a href="uploadpage.html">+</a>
+			</div>
+			<div class="tabbutton" id="profile">profile</div>
+		<div>
+
+
+
+	</div>
+
+	</BODY>
+
+
+</HTML>
