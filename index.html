@@ -1,0 +1,221 @@
+<HTML>
+	<HEAD>
+		<title>helloworld</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+				$(document).ready(function(){
+				  $("button").click(function(){
+				    $("#uploadpopup").toggle();
+				  });
+				});
+				</script>
+		<style>
+			body{ background-color:rgba(0,0,0,0.01); 
+				font-family: "Noto Sans", san-serif;
+				margin:0;}
+		
+			a{text-decoration:none; color:white;}
+
+			#topfollow{position:fixed;top:0;width:100vw;background-color:white;}
+				#searchbox{position:relative; padding-left:10px;padding-top:20px;padding-right:10px;background-color:white;}
+				#search{width:95vw; height:40px;background-color:rgba(0,0,0,0.05); margin: 0px; padding-top:0px; margin-top:0px;border-radius:20px;}
+				#searchicon{position:absolute; top:20px; width:24px; margin-top:9px; margin-left:16px;}
+				#realsearchicon{width:100%;}
+				#reckeywords{color:rgba(0,0,0,0.3);position:absolute;top:30px; margin-left:48px;font-weight:bold;}
+
+				#toptab{width:100vw;height:40px;background-color:white;display:flex;}
+				.toptabeach{width:33%;color:lightgray;text-align:center;margin-top:13px; border-bottom: 2px solid rgba(0,0,0,0.3);font-size:14px;}
+				#recommend{color:black; border-bottom: 3px solid black;font-weight:bold;}
+				#follow{color:gray;}
+				#hunt{color:gray;}
+
+
+			#topbox{position:relative;margin-top:100px;}
+				#gif1{width:100vw;margin-top:0px;margin-left:0; padding:0;}
+				#hollywood{position:absolute; bottom: 19px; left:16px; color:white;font-size: 20px;font-weight:bold;background-color:rgba(0,0,0,0.7);}
+
+
+			#trendbox{margin-left:10px;}
+				.rankingtxt{display:flex;position:relative;}
+				.trendtxt{color:black; margin-top:25px;margin-bottom:5px; font-weight:bold;font-size:14px;}
+				#seeall{right:10px;position:absolute; color:blue;font-weight:normal; font-size:13px;padding-top:4px;}
+				#seeall2{right:10px;position:absolute; color:blue;font-weight:normal; font-size:13px;padding-top:4px;}
+
+			#trendimgbox{width:100vw; height:20vh;position:relative; display:flex;}
+			#gif2{height:100%;}
+			#gif3{height:100%;}
+			#gif4{height:100%;}
+			.trendimg{padding-right:8px;}
+
+			#tabbar{position:fixed;bottom:0; background-color:black;width:100vw;height:70px; display:flex; }
+				.tabbutton{margin-right:10px;margin-left:10px; height:100%; width:20%; background-color:black; text-align:center;padding-top:9px; color:gray; font-weight:bold;font-size:15px; border-top:4px solid black;}
+				#home{border-top:4px solid white; color:white;}
+				#all{color:gray;}
+
+
+			#todaysfashionbox{margin-left:10px;width:98vw;margin-right:10px;}
+			#todaytxt{color:black; margin-top:30px;margin-bottom:5px;font-weight:bold;font-size:14px;}
+			#todaysimgbox{width:100%;  display:flex;}
+			.row{width:100%;margin-right:10px;}
+
+			.giftxtbox{position:relative;margin-right:10px;width:100%;overflow:hidden;margin-bottom:10px;}
+			.giftxt1{position:absolute; color:white;width:140px; left:10px; bottom:10;background-color:rgba(0, 0, 0, 0.5); font-weight:bold; }
+			#cold{width:80px;}
+			#leisure{width:100px;}
+			#monokini{width:100px;}
+			#bodysuit{width:120px;}
+			#streetfashion{width:100px;}
+
+
+			#gif5{width:100%; }
+			#gif6{width:100%;}
+
+			#blank{width:100%; height:81px; background-color:rgb(156, 52, 255); font-weight:bold;text-align:center;padding-top:58px;color:white;margin-top:10px;margin-bottom:10px;}
+			#sunglass{width:100%; height:40px;background-color:rgb(255, 53, 113);color:white;font-weight:bold;text-align:center; height:81px; padding-top:35px; margin-bottom:10px;}
+			#denim{width:100%; height:40px;background-color:rgb(40,127,255);color:white;font-weight:bold;text-align:center; height:81px; padding-top:35px; margin-bottom:10px;}
+
+			#etc{width:100%; text-align:center;padding-top:48px;padding-bottom:48px;background-color:white;border:2px solid lightgray;margin-top:10px;color:gray;font-size:13px;font-weight:bold;}
+
+			#bottomdummy{width: 100vw; height:80px;}
+
+
+			#uploadpopup{position:fixed;width:100vw;bottom:70px;display:none;}
+			#topblur{height:80vh;width:100%;background-color:rgba(0,0,0,0.4);}
+			#library{width:100%;height:45px;background-color:white;text-align:center;padding-top:23px;font-weight:bold;border-bottom:1px solid lightgrey;}
+			#url{width:100%;height:45px;background-color:white;text-align:center;padding-top:23px;font-weight:bold;}
+			#thebutton{width:50px;height:25px;background-color:white; border-radius:30px;font-size:15px;font-weight:bold;margin-top:10px;}
+
+
+		</style>
+
+	</HEAD>
+
+
+	<BODY>
+		<div id="whole">
+		
+		
+
+
+		<div id="topbox">
+		<div id="hollywood">요즘 핫한 드라마 속<br/>바로 그 아이템</div>
+		<img id="gif1" src="http://file3.instiz.net/data/file3/2019/01/13/5/5/4/55468537c421761e6224126ddce5689c.gif"/>
+		</div>
+
+
+		<div id="trendbox">
+			<div class="rankingtxt">
+			<div class="trendtxt">지금 핫한 패션 GIF 🥰</div>
+			<div class= "trendtxt" id="seeall">모두 보기</div>
+			</div>
+			<div id="trendimgbox">
+				<div class="trendimg">
+					<img id="gif2" src="http://file3.instiz.net/data/file3/2018/02/10/4/0/6/406f8fd51d9a986febc500772f8a3cff.gif"/>
+				</div>
+				<div class="trendimg">
+					<img id="gif3" src="https://1.bp.blogspot.com/-ob_QLt2aO1Q/WpYGiRKuAQI/AAAAAAAAYo0/BwOXQD8AqD8FFirwJbB1cCjOLtLL7v1HgCLcBGAs/s1600/4.gif"/>
+				</div>
+				<div class="trendimg">
+					<img id="gif4" src="https://media.giphy.com/media/xnMyN8CzPRyZa/giphy.gif"/>
+					
+				</div>
+			</div>
+			
+		</div>
+
+
+		<div id="todaysfashionbox">
+			<div class="rankingtxt">
+			<div id="todaytxt">HOT 트렌드태그</div>
+			<div class= "trendtxt" id="seeall2">모두 보기</div>
+			</div>
+
+			<div id="todaysimgbox">
+				<div class="row" id="firstrow">
+					<div class="giftxtbox">
+						<div class="giftxt1" id="streetfashion">#스트릿패션<br/>걸크러시 특집</div>
+						<img id="gif5" src="http://ntry.com/data/editor/1605/49e5a60d2c84a7b0f6b488f7e61984db_ZcLLR3X6.jpg"/>
+					</div>
+
+					<div id="sunglass">#틴티드선글라스<br/>멋짐 폭발 😎</div>
+					
+					<div class="giftxtbox">
+						<div class="giftxt1" id="monokini">요즘 핫하다던<br/>#모노키니</div>
+						<img id="gif5" src="http://image.fnnews.com/resource/media/image/2017/06/08/201706082045411843_l.jpg"/>
+					</div>
+
+					<div id="denim">올봄에 다시 유행할<br/>#데님</div>
+
+					<div class="giftxtbox">
+						<div class="giftxt1" id="bodysuit">개성을 살려주는<br/>#정장투피스</div>
+						<img id="gif5" src="https://mblogthumb-phinf.pstatic.net/MjAxODEwMjNfMjAx/MDAxNTQwMzA2NTQ0ODky.KHR_tnbuyCJyk6DTrb4X7_HYP6OTnkQAMxeguYOTXuIg.bB8yPapa_vBUKgBkCD5I3XSW4e1sGK-asUxKKOo_n_kg.JPEG.borambaby/%EC%84%A0%EB%AF%B8_%EC%9D%B8%EC%8A%A4%ED%83%80%EA%B7%B8%EB%9E%A8_%EC%82%AC%EB%B3%B5_%ED%8C%A8%EC%85%9803-1.jpg?type=w800"/>
+					</div>
+
+				</div>
+
+				<div class="row" id="secondrow">
+					<div class="giftxtbox">
+						<div class="giftxt1" id="cold">얼어죽어도<br/>#크롭탑</div>
+						<img id="gif6" src="https://i.pinimg.com/originals/89/b6/3e/89b63edf01dda5364d9dc56d3792253f.jpg"/>
+					</div>
+					
+					
+
+					<div id="blank">#어머이건사야해😱</div>
+
+					<a id="alei" class="giftxtbox" href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/web%20test/athleisure.html">
+						<div class="giftxt1" id="leisure">세상 제일 편한<br/> #애슬레저</div>
+						<img id="gif5" src="https://pds.joins.com/news/component/htmlphoto_mmdata/201703/09/e52fdfa5-592a-4239-8705-5c66489ef01b.jpg"/>
+					</a>
+					<div id="etc">+ 다른 태그 더보기</div>
+				</div>
+
+
+			</div>
+			
+		</div>
+
+
+		<div id="bottomdummy"></div>
+
+		
+
+
+		<div id="topfollow">
+			<div id="searchbox">
+				<div id="search";></div>
+				<div id="searchicon"> 
+					<img id="realsearchicon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-128.png"/> 
+				</div>
+				<div id="reckeywords">숏패딩,롱패딩</div>
+			</div>
+
+			<div id="toptab">
+				<div class="toptabeach" ><a id="follow" href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/web%20test/follow.html">팔로우</a></div>
+				<div class="toptabeach" id="recommend">추천</div>
+				<div class="toptabeach" ><a id="hunt" href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/web%20test/hunt.html">헌트</a></div>
+			</div>
+		</div>
+
+		<div id="uploadpopup">
+			<div id="topblur"></div>
+			<div id="library">사진/영상 업로드</div>
+			<div id="url">웹사이트</div>
+		</div>
+
+		<div id="tabbar">
+			<div class="tabbutton" id="home"><a href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/giftest.html">home</a></div>
+			<div class="tabbutton" ><a id="all" href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/web%20test/all.html">all</a></div>
+			<button id="thebutton">+</button>
+			<div class="tabbutton" id="alarm">alarm</div>
+			<div class="tabbutton" id="profile">profile</div>
+			</div>
+			
+
+	</div>
+
+	</BODY>
+
+
+</HTML>
