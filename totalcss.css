@@ -1,27 +1,31 @@
 body{ background-color:rgba(0,0,0,0.01); font-family: "Noto Sans", san-serif;margin:0;}
-		
 a{text-decoration:none; color:white;}
 
 
-#top{display:flex;position:relative;}
-			#back{width:20px;height:20px;margin-left:10px;margin-top:20px;}
-			#title{color:white; margin-left:10px;margin-top:20px;font-size:20px;font-weight:bold;line-height:1.4; margin-bottom:20px;}
+	#top{display:flex;position:relative;}
+	#back{width:20px;height:20px;margin-left:10px;margin-top:20px;}
+	#title{color:white; margin-left:10px;margin-top:20px;font-size:20px;font-weight:bold;line-height:1.4; margin-bottom:20px;}
 
+
+/*메인페이지 상단 서치&탭*/
 #topfollow{position:fixed;top:0;width:100vw;background-color:white;}
-	#searchbox{position:relative; padding-left:10px;padding-top:20px;padding-right:10px;background-color:white;}
-	#search{width:95vw; height:40px;background-color:rgba(0,0,0,0.05); margin: 0px; padding-top:0px; margin-top:0px;border-radius:20px;}
-	#searchicon{position:absolute; top:20px; width:24px; margin-top:9px; margin-left:16px;}
+	/*상단 서치*/
+	#searchbox{position:relative; padding-left:1rem; padding-right:1rem;padding-top:3rem;background-color:white;}
+	#search{height:5rem;background-color:rgba(0,0,0,0.05); margin: 0; padding-top:0; margin-top:0;border-radius:2rem;}
+	#searchicon{position:absolute; top:2.5rem; width:3.4rem; margin-top:1rem; margin-left:1.6rem;}
 	#realsearchicon{width:100%;}
-	#reckeywords{color:rgba(0,0,0,0.3);position:absolute;top:30px; margin-left:48px;font-weight:bold;}
+	#reckeywords{color:rgba(0,0,0,0.3);position:absolute;top:3.8rem; margin-left:5.8rem;font-weight:bold;font-size:2rem;}
 
-	#toptab{width:100vw;height:40px;background-color:white;display:flex;}
-	.toptabeach{width:33%;color:lightgray;text-align:center;margin-top:13px; border-bottom: 2px solid rgba(0,0,0,0.3);font-size:14px;}
-	#recommend{color:black; border-bottom: 3px solid black;font-weight:bold;}
+	/*상단 탭*/
+	#toptab{width:100vw;height:7rem;background-color:white;display:flex;}
+	.toptabeach{width:33.333%;color:lightgray;text-align:center;margin-top:2.7rem; border-bottom: .6rem solid rgba(0,0,0,0.3);font-size:2rem;}
+	#recommend{color:black; border-bottom: .6rem solid black;font-weight:bold;}
 	#follow{color:gray;}
 	#hunt{color:gray;}
 
 
-#topbox{position:relative;margin-top:100px;}
+/*메인페이지 상단 gif*/
+#topbox{position:relative;margin-top:10.9rem;}
 	#gif1{width:100vw;margin-top:0px;margin-left:0; padding:0;}
 	#hollywood{position:absolute; bottom: 19px; left:16px; color:white;font-size: 20px;font-weight:bold;background-color:rgba(0,0,0,0.7);}
 
@@ -38,6 +42,8 @@ a{text-decoration:none; color:white;}
 #gif4{height:100%;}
 .trendimg{padding-right:8px;}
 
+
+/*하단 탭*/
 #tabbar{position:fixed;bottom:0; background-color:black;width:100vw;height:70px; display:flex; }
 	.tabbutton{margin-right:10px;margin-left:10px; height:100%; width:20%; background-color:black; text-align:center;padding-top:9px; color:gray; font-weight:bold;font-size:15px; border-top:4px solid black;}
 	#home{border-top:4px solid white; color:white;}
@@ -71,16 +77,19 @@ a{text-decoration:none; color:white;}
 #bottombox{width:100vw; height:100px;}
 
 
+/*업로드 버튼 클릭 시 나오는 팝업*/
 #uploadpopup{position:fixed;width:100vw;bottom:70px;display:none;}
 #topblur{height:80vh;width:100%;background-color:rgba(0,0,0,0.4);}
 #library{width:100%;height:45px;background-color:white;text-align:center;padding-top:23px;font-weight:bold;border-bottom:1px solid lightgrey;}
 #url{width:100%;height:45px;background-color:white;text-align:center;padding-top:23px;font-weight:bold;}
+
+/*업로드 버튼*/
 .thebutton{width:50px;height:25px;background-color:white; border-radius:30px;font-size:15px;font-weight:bold;margin-top:10px;}
 
 
 #topbutton{position:absolute; right:10px;margin-top:20px;width:70px; font-size:13px;}
 
-
+/*게시물 클릭 시 게시물 하단 프로필*/
 .profilebox{width:100%;display:flex;}
 .profile{width:23px;height:20px;margin-top:5px;padding-right:5px;}
 
