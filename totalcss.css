@@ -37,7 +37,7 @@ a{text-decoration:none; color:white;}
 		#seeall{right:1rem;position:absolute; color:blue;font-weight:normal; font-size:2rem;padding-top:.4rem;}
 		#seeall2{right:1rem;position:absolute; color:blue;font-weight:normal; font-size:2rem;}
 
-	#trendimgbox{width:100vw; height:24vh;position:relative; display:flex;}
+	#trendimgbox{width:100vw; height:24vh;position:relative; display:flex;overflow:hidden;}
 		.gif2{height:100%;}
 		.trendimg{padding-right:.8rem;}
 
