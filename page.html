@@ -1,13 +1,14 @@
 <HTML>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
-		<style>
-			body{background-color:black;margin:0;font-family: "Noto Sans", san-serif;}
+		<link rel="stylesheet" type="text/css" href="totalcss.css">
 
+		<style>
+
+			body{background-color:black;}
 			#fullview{position:relative;height:80%;overflow:hidden;}
 			#goback{width:30px;height:30px;position:relative;top:30px;left:30px;background-color:rgba(0,0,0,0.8);}
 			#back{width:20px;height:20px;}
-
 
 			#profile{display:flex;margin-bottom:13px;}
 			#profilepic{width:20px;height:20px;margin-right:10px;}
@@ -19,32 +20,14 @@
 			#reply{color:lightgray;font-size:13px;margin-top:11px;}
 
 
-
-			#likes{position:absolute;right:0px;bottom:23px;width:30px; margin-right:25px;}
+			#likes{position:absolute;right:0;bottom:23px;width:30px; margin-right:25px;}
 			#hearticon{width:100%;}
 			#likenumber{color:white;font-size:13px;font-weight:bold;margin-top:5px;}
 
 
 
-
 			#commerce{color:white;margin-left:10px;margin-top:30px;font-weight:bold;font-size:14px;margin-bottom:10px;}
 
-
-
-			#todaysfashionbox{margin-left:10px;width:98vw;margin-right:10px;margin-top:10px;}
-			#todaytxt{color:white; margin-top:30px;}
-			#todaysimgbox{width:100%;  display:flex;}
-
-
-			.row{width:100%;margin-right:10px;}
-
-			.giftxtbox{position:relative;margin-right:10px;width:100%;overflow:hidden;margin-bottom:2px;}
-			#cold{width:80px;}
-			#leisure{width:100px;}
-			#monokini{width:100px;}
-
-			#gif5{width:100%; }
-			#gif6{width:100%;}
 
 			.text{color:white;margin-bottom:10px;font-size:13px;width:100%;margin-top:5px;}
 
@@ -95,11 +78,14 @@
 			<div class="type">레깅스</div>
 		</div>
 
-		<div id="todaysfashionbox">
-			<div id="todaysimgbox">
+
+
+		<!--하단 -->
+		<div class="todaysfashionbox">
+			<div class="todaysimgbox">
 				<div class="row" id="firstrow">
 					<div class="giftxtbox">
-						<img id="gif5" src="http://img.danawa.com/prod_img/500000/703/589/img/3589703_1.jpg?shrink=500:500&_v=20151203100330"/>
+						<img class="gif5" src="http://img.danawa.com/prod_img/500000/703/589/img/3589703_1.jpg?shrink=500:500&_v=20151203100330"/>
 					</div>
 
 					<div class="profilebox">
@@ -107,7 +93,7 @@
 					</div>
 					
 					<div class="giftxtbox">
-						<img id="gif5" src="http://seoul-p-studio.bunjang.net/product/48868693_1_1477735924_w640.jpg"/>
+						<img class="gif5" src="http://seoul-p-studio.bunjang.net/product/48868693_1_1477735924_w640.jpg"/>
 					</div>
 
 					<div class="profilebox">
@@ -116,7 +102,7 @@
 					
 					<div class="giftxtbox">
 
-						<img id="gif5" src="https://seoul-p-studio.bunjang.net/product/94683223_1_1545758460_w640.jpg"/>
+						<img class="gif5" src="https://seoul-p-studio.bunjang.net/product/94683223_1_1545758460_w640.jpg"/>
 					</div>
 
 					<div class="profilebox">
@@ -124,7 +110,7 @@
 					</div>
 
 					<div class="giftxtbox">
-						<img id="gif5" src="http://liphop.co.kr/shopimages/liphop2588/006003000734.jpg?1543295821"/>
+						<img class="gif5" src="http://liphop.co.kr/shopimages/liphop2588/006003000734.jpg?1543295821"/>
 					</div>
 
 					<div class="profilebox">
@@ -135,7 +121,7 @@
 
 				<div class="row" id="secondrow">
 					<div class="giftxtbox">
-						<img id="gif6" src="https://image.musinsa.com/images/goods_img/20180219/718043/718043_1_320.jpg"/>
+						<img class="gif6" src="https://image.musinsa.com/images/goods_img/20180219/718043/718043_1_320.jpg"/>
 					</div>
 					<div class="profilebox">
 					<div class="text">내셔널지오그래픽 점퍼 블루종 점퍼<br/>259,000원</div>
@@ -143,7 +129,7 @@
 
 					<div class="giftxtbox">
 
-						<img id="gif5" src="https://t1.daumcdn.net/cfile/tistory/990A233359FAEEF02C"/>
+						<img class="gif5" src="https://t1.daumcdn.net/cfile/tistory/990A233359FAEEF02C"/>
 					</div>
 					<div class="profilebox">
 					<div class="text">라코스테LIVE 야구점퍼<br/>230,000원</div>
@@ -151,7 +137,7 @@
 
 					<div class="giftxtbox">
 
-						<img id="gif5" src="https://scontent-ams3-1.cdninstagram.com/vp/313efb8f24c6647718fe2f1382ee4dd5/5CCAF240/t51.2885-15/sh0.08/e35/s640x640/42187877_299102937484114_6147065474498077702_n.jpg?_nc_ht=scontent-ams3-1.cdninstagram.com"/>
+						<img class="gif5" src="https://scontent-ams3-1.cdninstagram.com/vp/313efb8f24c6647718fe2f1382ee4dd5/5CCAF240/t51.2885-15/sh0.08/e35/s640x640/42187877_299102937484114_6147065474498077702_n.jpg?_nc_ht=scontent-ams3-1.cdninstagram.com"/>
 					</div>
 					<div class="profilebox">
 					<div class="text">라코스테LIVE 야구점퍼<br/>230,000원</div>
@@ -162,7 +148,7 @@
 					<div class="giftxtbox">
 
 						<a href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/web%20test/page.html">
-						<img id="gif5" src="https://thumb.pann.com/tc_480/http://fimg4.pann.com/new/download.jsp?FileID=43097394"/>
+						<img class="gif5" src="https://thumb.pann.com/tc_480/http://fimg4.pann.com/new/download.jsp?FileID=43097394"/>
 						</a>
 					</div>
 					<div class="profilebox">
