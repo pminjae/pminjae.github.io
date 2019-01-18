@@ -23,7 +23,27 @@
 			#toptitle{font-weight:bold;font-size:4.5rem;color:#FBFF8E;}
 			#topsubtitle{font-size:2rem;width:90%;text-align:center;margin-top:3rem;padding-left:5%;color:#FBFF8E;}
 
-			.line{width:100%;height:15px;background-color:rgba(0,0,0,0.05);}
+			.line{width:100%;height:1.5rem;background-color:rgba(0,0,0,0.05);}
+
+			/*주간헌터랭킹*/
+			#hunterranking{margin-left:1rem;}
+			.rankingtxt{display:flex;position:relative;}
+			.trendtxt{color:black; margin-top:3rem;margin-bottom:.5rem; font-weight:bold;font-size:2.5rem;}
+			#hunterseeall{right:1rem;position:absolute; color:blue;font-weight:normal; font-size:2rem;padding-top:.4rem;}
+			#huntertext{color:gray; font-size:1.6rem;}
+
+			#trendimgbox{width:99vw;height:30rem;display:flex;overflow:hidden;}
+			.trendimgboxeach{margin-right:1rem;}
+			.trendimg{position:relative;}
+				.gif2{width:30rem;overflow:hidden;}
+				.rank{position:absolute;top:1rem;margin:1rem;padding:1.5rem;background-color:purple;color:white;font-size:1.7rem;border-radius:3rem;}
+				.like{position:absolute;bottom:0;display:flex;margin:1rem;}
+					.hearticon{width:3rem;height:3rem;}
+					.likenumber{color:white;margin-left:1rem;font-size:1.7rem;font-weight:bold;}
+
+			.profileinfo{width:100%; height:3rem; display:flex;}
+					.userid{font-weight:bold;padding-top:1rem;font-size:2rem;}
+					.profilepic{width:4rem;height:4rem;padding-top:.5rem;}
 
 
 		</style>	
@@ -31,6 +51,7 @@
 
 	<body>
 		
+		<!--상단 안내문-->
 		<div id="topcontents">
 			<div id="toptitle">넘나 탐나는 이 옷,<br/>도대체 어디꺼인가요?</div>
 			<div id="topsubtitle">드라마, 유튜브, 혹은 현실에서 본 예쁜 아이템이 무엇인지 찾기 힘들었다면 모두 모여라! 우리 트레저 헌터들이 찾아줄게</div>
@@ -38,7 +59,71 @@
 
 		<div class="line"></div>
 
+		<!--주간 탑 헌터 랭킹-->
+		<div id="hunterranking">
+			<div class="rankingtxt">
+				<div class="trendtxt">주간 TOP 헌터 랭킹</div>
+				<div class= "trendtxt" id="hunterseeall">모두 보기</div>
+			</div>
+			<div id="huntertext">주간 탑 헌터는 매주 월요일 오후 1시에 업데이트 됩니다.</div>
 
+			<div id="trendimgbox">
+				<div class="trendimgboxeach">
+					<div class="trendimg">
+						<img class="gif2" src="http://file3.instiz.net/data/file3/2018/02/10/4/0/6/406f8fd51d9a986febc500772f8a3cff.gif"/>
+						<div class="rank">1위</div>
+						<div class="like">
+							<img class="hearticon" src="http://snapbuilder.com/code_snippet_generator/icon_generator/gd/makefg.php?i=icons/Sports/Heart.png&r=255&g=255&b=255">
+							<div class="likenumber">58.9k</div>
+						</div>
+					</div>
+					<div class="profileinfo">
+						<img class="profilepic" src="https://static1.squarespace.com/static/56687b63bfe8731ec36f0d11/t/59fd07fe64265f6a40fdf888/1509754893597/circle-headshot.png"/>
+						<div class="userid">pminjae</div>
+					</div>
+				</div>
+
+				<div class="trendimgboxeach">
+					<div class="trendimg">
+						<img class="gif2" src="http://file3.instiz.net/data/file3/2018/02/10/4/0/6/406f8fd51d9a986febc500772f8a3cff.gif"/>
+						<div class="rank">1위</div>
+						<div class="like">
+							<img class="hearticon" src="http://snapbuilder.com/code_snippet_generator/icon_generator/gd/makefg.php?i=icons/Sports/Heart.png&r=255&g=255&b=255">
+							<div class="likenumber">58.9k</div>
+						</div>
+					</div>
+					<div class="profileinfo">
+						<img class="profilepic" src="https://static1.squarespace.com/static/56687b63bfe8731ec36f0d11/t/59fd07fe64265f6a40fdf888/1509754893597/circle-headshot.png"/>
+						<div class="userid">pminjae</div>
+					</div>
+				</div>
+				<div class="trendimgboxeach">
+					<div class="trendimg">
+						<img class="gif2" src="http://file3.instiz.net/data/file3/2018/02/10/4/0/6/406f8fd51d9a986febc500772f8a3cff.gif"/>
+						<div class="rank">1위</div>
+						<div class="like">
+							<img class="hearticon" src="http://snapbuilder.com/code_snippet_generator/icon_generator/gd/makefg.php?i=icons/Sports/Heart.png&r=255&g=255&b=255">
+							<div class="likenumber">58.9k</div>
+						</div>
+					</div>
+					<div class="profileinfo">
+						<img class="profilepic" src="https://static1.squarespace.com/static/56687b63bfe8731ec36f0d11/t/59fd07fe64265f6a40fdf888/1509754893597/circle-headshot.png"/>
+						<div class="userid">pminjae</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<div class="line"></div>
+
+
+
+
+
+		<!--상단 서치 & 탭-->
 		<div id="topfollow">
 			<div id="searchbox">
 				<div id="search";></div>
@@ -55,12 +140,14 @@
 			</div>
 		</div>
 
+		<!--업로드팝업-->
 		<div id="uploadpopup">
 			<div id="topblur"></div>
 			<div id="library">사진/영상 업로드</div>
 			<div id="url">웹사이트</div>
 		</div>
 
+		<!--하단탭바-->
 		<div id="tabbar">
 			<a class="tabbutton" id="home" href="index.html">home</a>
 			<a class="tabbutton" id="all" href="all.html" >all</a>
