@@ -2,9 +2,22 @@ body{ background-color:rgba(0,0,0,0.01); font-family: "Noto Sans", san-serif;mar
 a{text-decoration:none; color:white;font-family:"Noto Sans", san-serif;}
 
 
+/*메인페이지 상단 서치&탭*/
+	#topfollow{position:fixed;top:0;width:100vw;background-color:white;}
+		/*상단 서치*/
+		#searchbox{position:relative; padding-left:1rem; padding-right:1rem;padding-top:3rem;background-color:white;}
+		#search{height:5rem;background-color:rgba(0,0,0,0.05); margin: 0; padding-top:0; margin-top:0;border-radius:2rem;}
+		#searchicon{position:absolute; top:2.5rem; width:3.4rem; margin-top:1.4rem; margin-left:1.6rem;}
+		#realsearchicon{width:100%;}
+		#reckeywords{color:rgba(0,0,0,0.3);position:absolute;top:4.2rem; margin-left:5.8rem;font-weight:bold;font-size:2rem;}
+
+		/*상단 탭*/
+		#toptab{width:100vw;height:7rem;background-color:white;display:flex;}
+		.toptabeach{width:33.333%;color:lightgray;text-align:center;margin-top:2.7rem; border-bottom: .6rem solid rgba(0,0,0,0.3);font-size:2rem;}
+
+
 /*HOT 트렌드태그*/
 .todaysfashionbox{margin-left:1rem;width:99%;margin-right:1rem;}
-#todaytxt{color:black; margin-top:30px;margin-bottom:1.3rem;font-weight:bold;font-size:2.5rem;}
 .todaysimgbox{width:100%; display:flex;}
 .row{width:100%;margin-right:1rem;}
 
@@ -30,3 +43,6 @@ a{text-decoration:none; color:white;font-family:"Noto Sans", san-serif;}
 	#home{border-top:4px solid white; color:white;}
 	#all{color:gray;}
 
+
+/*하단 더미*/
+#bottomdummy{width:100vw;height:15rem;}

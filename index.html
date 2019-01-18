@@ -12,19 +12,10 @@
 				});
 		</script>
 		<style>
-			/*메인페이지 상단 서치&탭*/
-			#topfollow{position:fixed;top:0;width:100vw;background-color:white;}
-			/*상단 서치*/
-			#searchbox{position:relative; padding-left:1rem; padding-right:1rem;padding-top:3rem;background-color:white;}
-			#search{height:5rem;background-color:rgba(0,0,0,0.05); margin: 0; padding-top:0; margin-top:0;border-radius:2rem;}
-			#searchicon{position:absolute; top:2.5rem; width:3.4rem; margin-top:1.4rem; margin-left:1.6rem;}
-			#realsearchicon{width:100%;}
-			#reckeywords{color:rgba(0,0,0,0.3);position:absolute;top:4.2rem; margin-left:5.8rem;font-weight:bold;font-size:2rem;}
 
-			/*상단 탭*/
-			#toptab{width:100vw;height:7rem;background-color:white;display:flex;}
-			.toptabeach{width:33.333%;color:lightgray;text-align:center;margin-top:2.7rem; border-bottom: .6rem solid rgba(0,0,0,0.3);font-size:2rem;}
+			/*상단 탭 변화부분*/
 			#recommend{color:black; border-bottom: .6rem solid black;font-weight:bold;}
+			#recommendtext{color:black;}
 			#follow{color:gray;}
 			#hunt{color:gray;}
 
@@ -70,12 +61,13 @@
 	<BODY>
 		<div id="whole">
 
+		<!-- 가장 처음나오는 섹션 -->
 		<div id="topbox">
 		<div id="hollywood">요즘 핫한 드라마 속<br/>바로 그 아이템</div>
 		<img id="gif1" src="http://file3.instiz.net/data/file3/2019/01/13/5/5/4/55468537c421761e6224126ddce5689c.gif"/>
 		</div>
 
-
+		<!-- 지금핫한패션 gif -->
 		<div id="trendbox">
 			<div class="rankingtxt">
 			<div class="trendtxt">지금 핫한 패션 GIF 🥰</div>
@@ -97,6 +89,7 @@
 		</div>
 
 
+		<!-- 핫트렌드태그 -->
 		<div class="todaysfashionbox">
 			<div class="rankingtxt">
 			<div id="todaytxt">HOT 트렌드태그</div>
@@ -152,6 +145,7 @@
 		<div id="bottomdummy"></div>
 		
 
+		<!-- 상단 서치&탭바 -->
 		<div id="topfollow">
 			<div id="searchbox">
 				<div id="search";></div>
@@ -162,21 +156,25 @@
 			</div>
 
 			<div id="toptab">
-				<div class="toptabeach" ><a id="follow" href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/web%20test/follow.html">팔로우</a></div>
-				<div class="toptabeach" id="recommend">추천</div>
-				<div class="toptabeach" ><a id="hunt" href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/web%20test/hunt.html">헌트</a></div>
+				<a class="toptabeach" id="follow" href="follow.html">팔로우</a>
+				<a class="toptabeach" id="recommend" href="index.html">추천</a>
+				<a class="toptabeach" id="hunt" href="hunt.html">헌트</a>
 			</div>
 		</div>
 
+
+		<!-- 업로드팝업 -->
 		<div id="uploadpopup">
 			<div id="topblur"></div>
 			<div id="library">사진/영상 업로드</div>
 			<div id="url">웹사이트</div>
 		</div>
 
+
+		<!-- 하단 탭바 -->
 		<div id="tabbar">
-			<div class="tabbutton" id="home"><a href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/giftest.html">home</a></div>
-			<div class="tabbutton" ><a id="all" href="file:///Users/parkminjae/Documents/09.%20work%20/07.%20PHLOX%20%F0%9F%8C%B8/02.%20fashion/web%20test/all.html">all</a></div>
+			<div class="tabbutton" id="home"><a href="index.html">home</a></div>
+			<div class="tabbutton" ><a id="all" href="all.html">all</a></div>
 			<button class="thebutton">+</button>
 			<div class="tabbutton" id="alarm">alarm</div>
 			<div class="tabbutton" id="profile">profile</div>
