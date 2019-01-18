@@ -39,9 +39,9 @@ a{text-decoration:none; color:white;font-family:'Noto Sans KR', sans-serif;}
 
 /*하단 탭*/
 #tabbar{position:fixed;bottom:0; background-color:black;width:100vw;height:10rem; display:flex; }
-	.tabbutton{margin-right:1rem;margin-left:1rem; height:80%; width:20%; background-color:black; text-align:center;padding-top:.9rem; color:gray; font-weight:bold;font-size:2.5rem; border-top:4px solid black;}
-	#home{border-top:4px solid white; color:white;}
-	#all{color:gray;}
+.tabbutton{margin-right:1rem;margin-left:1rem; height:80%; width:20%; background-color:black; text-align:center;padding-top:.9rem; color:gray; font-weight:bold;font-size:2.5rem; border-top:4px solid black;}
+#home{border-top:.3rem solid white; color:white;}
+
 
 
 /*하단 더미*/
